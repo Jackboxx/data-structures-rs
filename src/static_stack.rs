@@ -70,5 +70,8 @@ mod tests {
         }
 
         assert_eq!(static_stack.pop(), None);
+
+        static_stack.push(1).unwrap();
+        assert_eq!(static_stack.pop(), Some(1));
     }
 }
